@@ -34,6 +34,7 @@ public class Main {
         System.out.println("6 - Listar Reservas");
         System.out.println("7 - Buscar Reservas por Cliente");
         System.out.println("8 - Verificar Disponibilidade");
+        System.out.println("9 - Listar Quadras por Tipo e Preco");
         System.out.println("0 - Sair");
     }
 
@@ -48,6 +49,7 @@ public class Main {
                 case 6 -> sistema.listarReservas();
                 case 7 -> buscarReservasPorCliente();
                 case 8 -> verificarDisponibilidade();
+                case 9 -> sistema.listarQuadrasOrdenadas();
                 case 0 -> {} // sair
                 default -> System.out.println("Opcao invalida. Tente novamente.");
             }

@@ -46,6 +46,17 @@ public class SistemaReserva {
         quadras.forEach(System.out::println);
     }
 
+    public void listarQuadrasOrdenadas() {
+        if (quadras.isEmpty()) {
+            System.out.println("Nenhuma quadra cadastrada.");
+            return;
+        }
+        List<Quadra> ordenadas = new ArrayList<>(quadras);
+        ordenadas.sort(Comparator.comparing(Quadra::getTipo).thenComparingDouble(Quadra::getPrecoHora));
+        System.out.println("\n=== QUADRAS ORDENADAS POR TIPO E PRECO ===");
+        ordenadas.forEach(System.out::println);
+    }
+
     // ── Clientes ─────────────────────────────────────────────────────────────
 
     public void cadastrarCliente(String nome, String telefone) {
