@@ -28,6 +28,7 @@ Ao iniciar, aparece esse menu:
 6 - Listar Reservas
 7 - Buscar Reservas por Cliente
 8 - Verificar Disponibilidade
+9 - Listar Quadras por Tipo e Preco
 0 - Sair
 ```
 
@@ -70,17 +71,19 @@ Se o horário já estiver ocupado, o sistema bloqueia e avisa.
 
 **Verificar Disponibilidade (8):** informe ID da quadra, data e hora — o sistema diz se está livre ou ocupada.
 
+**Listar Quadras por Tipo e Preço (9):** mostra todas as quadras ordenadas primeiro por tipo e depois pelo menor preço.
+
 ---
 
-## Arquivos CSV (pasta data/)
+## Arquivos JSON (pasta data/)
 
 Os dados ficam salvos automaticamente em:
 
 | Arquivo | O que guarda |
 |---|---|
-| `data/quadras.csv` | todas as quadras cadastradas |
-| `data/clientes.csv` | todos os clientes cadastrados |
-| `data/reservas.csv` | todas as reservas realizadas |
+| `data/quadras.json` | todas as quadras cadastradas |
+| `data/clientes.json` | todos os clientes cadastrados |
+| `data/reservas.json` | todas as reservas realizadas |
 
 Ao fechar e abrir o programa novamente, os dados continuam lá.
 
